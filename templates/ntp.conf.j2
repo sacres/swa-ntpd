@@ -11,7 +11,7 @@ restrict default nomodify notrap nopeer noquery
 # Permit all access over the loopback interface.  This could
 # be tightened as well, but to do so would effect some of
 # the administrative functions.
-restrict 127.0.0.1 
+restrict 127.0.0.1
 restrict ::1
 # Hosts on local network are less restricted.
 #restrict 192.168.1.0 mask 255.255.255.0 nomodify notrap
@@ -37,7 +37,7 @@ server 3.centos.pool.ntp.org iburst
 includefile /etc/ntp/crypto/pw
 
 # Key file containing the keys and key identifiers used when operating
-# with symmetric key cryptography. 
+# with symmetric key cryptography.
 keys /etc/ntp/keys
 
 # Specify the key identifiers which are trusted.
@@ -50,7 +50,7 @@ keys /etc/ntp/keys
 #controlkey 8
 
 # Enable writing of statistics records.
-#statistics clockstats cryptostats loopstats peerstats
+statistics clockstats cryptostats loopstats peerstats
 
 # Disable the monitoring facility to prevent amplification attacks using ntpdc
 # monlist command when default restrict does not include the noquery flag. See
